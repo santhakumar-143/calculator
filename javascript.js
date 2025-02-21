@@ -1,16 +1,14 @@
-function appendValue(value) {
-    document.getElementById('display').value += value;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleParagraph = document.getElementById("toggleparagraph"); // Corrected ID
+    const toggleHeading = document.querySelector(".header h1"); // Select the header to toggle
 
-function clearDisplay() {
-    document.getElementById('display').value = '';
-}
-
-function calculate() {
-    try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
-    } catch (error) {
-        alert('Invalid Expression');
-        clearDisplay();
+    if (toggleHeading && toggleParagraph) {
+        toggleHeading.addEventListener("click", () => {
+            if (toggleParagraph.style.display === "none" || toggleParagraph.style.display === "") {
+                toggleParagraph.style.display = "block";
+            } else {
+                toggleParagraph.style.display = "none";
+            }
+        });
     }
-}
+});

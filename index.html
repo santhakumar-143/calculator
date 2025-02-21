@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="icon" type="image/png" href="image1.png">
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#06c1db">
+    <title>Tribute Page</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="Text/css" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <h1>Calculator</h1> <!-- Added heading -->
-        <input type="text" class="display" id="display" disabled>
-        <div class="buttons">
-            <button class="clear" onclick="clearDisplay()">C</button>
-            <button onclick="appendValue('/')">/</button>
-            <button onclick="appendValue('*')">*</button>
-            <button onclick="appendValue('-')">-</button>
-            <button onclick="appendValue('7')">7</button>
-            <button onclick="appendValue('8')">8</button>
-            <button onclick="appendValue('9')">9</button>
-            <button class="operator" onclick="appendValue('+')">+</button>
-            <button onclick="appendValue('4')">4</button>
-            <button onclick="appendValue('5')">5</button>
-            <button onclick="appendValue('6')">6</button>
-            <button onclick="appendValue('1')">1</button>
-            <button onclick="appendValue('2')">2</button>
-            <button onclick="appendValue('3')">3</button>
-            <button class="equal" onclick="calculate()">=</button>
-            <button onclick="appendValue('0')">0</button>
-            <button onclick="appendValue('.')">.</button>
-        </div>
-    </div>
-    <script src="javascript.js"></script>
+    <header class="header">
+        <div>
+            <h1>Tribute Page</h1>
+            <p id="toggleparagraph">
+                A tribute page is a webpage created to honor or pay respect to someone or something, often featuring memories, achievements, or contributions.
+            </p>
+        </div> 
+        <img src="image1.png" alt="Caption Cool" title="Helicopter Shot">
+        <h2 class="title"> MS-Dhoni</h2>
+    </header>
+    <section class="Tribute">
+        <q>
+            Leadership is the capacity to translate vision into reality.
+        </q>
+    </section>
+    <section class="bio">
+        <h2>Biography</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;⫸&nbsp;&nbsp;&nbsp;Dhoni was born on 7 July 1981 in Ranchi, Bihar (now in
+            Jharkhand) in a Hindu Rajput family to Pan Singh and Devaki Devi.His parents hailed from Lwali village
+            in Uttar Pradesh (now Uttarakhand) and he was the youngest of three children. His family spells the
+            surname as "Dhauni".The spelling "Dhoni" emerged due to a spelling mistake in his school certificates
+            Dhoni did his schooling from DAV Jawahar Vidya Mandir, where he started playing football as a goalkeeper,
+            but later moved to play cricket on the suggestion of his coach Keshav Banerjee.From 2001 to 2003,
+            Dhoni worked as a Travelling Ticket Examiner (TTE) at Kharagpur under South Eastern Railway zone of Indian
+            Railways.</p>
+        <hr />
+    </section>
+    <header class="header">
+        <img src="image4-removebg-preview.png" alt="Pardeep Narwal" title="Dupki King" id="pradeep-img">
+        <h2 class="title">Pardeep Narwal
+        </h2>
+    </header>
+    <section class="Tribute">
+        <q id="style">
+            A raider needs to be perfect with his timings, attitude and be darling enough to take chances to score points
+        </q>    
+    </section>
+    <section class="bio">
+        <h2>Biography</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;⫸&nbsp;&nbsp;&nbsp;Narwal was born in Rindhana village of Haryana's Sonipat district, where he started playing kabaddi.He started learning Kabaddi when he was only 6 years old. He got picked for his school's Kabaddi team when he was just 11 years old. Later, at 12, he joined the Haryana Kabaddi Academy.<br/>
+            &nbsp;&nbsp;&nbsp;⫸&nbsp;&nbsp;&nbsp;Narwal made his debut in VIVO Pro Kabaddi with the Bengaluru Bulls against Patna Pirates in Season and featured six times that campaign, scoring a total of nine raid points
+        </p>
+        <hr/>
+        <script src="javascript.js"></script>
+    </section>
+    
 </body>
+
 </html>
